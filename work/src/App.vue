@@ -1,4 +1,11 @@
 <template>
+ <div>
+    <nav>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/student">Home style 2</router-link></li>
+      <li><router-link to="/add">Create</router-link></li>
+    </nav>
+  </div>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Hamdee.WU.ac.th" msg_name="Hamdee Naseng"/>
 
