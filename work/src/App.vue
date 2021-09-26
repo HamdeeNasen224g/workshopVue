@@ -1,7 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
+  <HelloWorld msg="Welcome to Hamdee.WU.ac.th" msg_name="Hamdee Naseng"/>
+
+  <button @click="counter += 1">Add 1</button>
+  <p>The button above has been clicked {{ counter }} times.</p>
+
+<input v-model="message" placeholder="edit me" />
+<p>Message is: {{ message }}</p>
+
+
+</template> 
+
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
@@ -10,6 +19,14 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },  data() {
+      return {
+        counter: 0
+        
+      }
+      return {
+      message: ''
+    }
   }
 }
 </script>
